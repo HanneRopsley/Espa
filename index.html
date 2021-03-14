@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espa home</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="outerDiv">
+    <header>
+      <img src="./images/Esperana logo.png" alt="Espa logo">
+      <h1>Zaalvoetbalploeg Esperanza Bierbeek</h1>
+    </header>
+    <main>
+      <nav>
+        <div class="buttonNavs nothidden">
+          <a href="index.html"><div class="buttonNav" id="homeButton"><strong>home</strong></div></a>
+          <a href="overOns.html"><div class="buttonNav"><strong>over ons</strong></div></a>
+          <a href="contact.html"><div class="buttonNav"><strong>contact</strong></div></a>
+          <a href="klassement.html"><div class="buttonNav"><strong>Klassement en<br>resultaten</strong></div></a>
+        </div>
+        <div class="buttonNavs hidden">
+          <a href="komendeWedstrijden.html"><div class="buttonNav"><strong>komende wedstrijden</strong></div></a>
+          <a href="Wedstrijdlogs.html"><div class="buttonNav"><strong>wedstrijd logs</strong></div></a>
+          <a href="fotos.html"><div class="buttonNav"><strong>foto's</strong></div></a>
+        </div>
+        <div class="loginButtonCont" id="loginButtonContPC">
+          <a href="login.html"><button class="loginButton">speler login</button></a>
+        </div>
+      </nav>
+      <section>
+        <div class='title'><h2>Espa staat scherper dan ooit!</h2></div>
+        <div class='content'>
+          <div class="contentBox">
+            <button class="arrow" onclick="nextPhoto(-1)">&#10094;</button>
+            <img class="photoSlide" src="./images/zaalvoetbal 3.jpg" alt="zaalvoetbal3">
+            <img class="photoSlide" src="./images/zaalvoetbal 1.jpg" alt="zaalvoetbal1">
+            <img class="photoSlide" src="./images/zaalvoetbal 2.jpg" alt="zaalvoetbal2">
+            <img class="photoSlide" src="./images/groepsfoto.jpg" alt="Espa groepsfoto">
+            <button class="arrow" onclick="nextPhoto(+1)">&#10095;</button>
+          </div>
+          <div class="loginButtonCont" id="loginButtonContMob">
+            <a href="login.html"><button class="loginButton">speler login</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© Espa 2021</p>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+  <script src="./scriptLogin.js"></script>
+  </body>
+</html>
+

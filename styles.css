@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #404040;
+}
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8C9696;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.outerDiv {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    height: 20%;
+    background-color: #c2d6d6;
+    overflow: hidden;
+    border-bottom: 0.3rem solid #f2f2f3;
+}
+
+header img {
+    display: block;
+    height: 80%;
+    width: auto;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+
+nav {
+    background-color: #c2d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+.menuIcon {
+    display: none;
+    margin-left: 1rem;
+}
+
+.buttonNavs {
+    width: 100%;
+}
+
+.buttonNavs a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.buttonNav {
+    background-color: #c2d6d6;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.3rem solid #f2f2f3;
+}
+
+.buttonNav:hover { 
+    background-color: #a3c2c2; 
+    }
+
+#homeButton {
+    background-color: #a3c2c2; 
+}
+
+#contactButton, #overonsButton, #klassementButton, #komendeButton, #logButton, #fotosButton {
+    background-color: #a3c2c2; 
+}
+
+.hidden {
+    display: none;
+}
+
+.loginButtonCont {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButton {
+    width: 10rem;
+    height: 4rem;
+    background-color: #0066ff;
+    color: #f2f2f3;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #f2f2f3;
+}
+
+.loginButton:hover {
+    background-color: #0052cc;
+}
+
+section {
+    height: 100%;
+    width: 80%;
+    background-color: #f2f2f3;
+}
+
+section div {
+    width: 100%;
+}
+
+.title {
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    height: 80%;
+}
+
+#contentContact, #contentOverons, #contentKlassement, #contentFotos {
+    height: 100%
+}
+
+.contentBox {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+#contentBoxContact, #contentBoxOverons, #contentBoxKlassement {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+#imgLocatie, #imgVrienden, #imgRangschikking, .imgRes {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* styling slideshow home page */
+
+.photoSlide {
+    max-width: 90%;
+    height: auto;
+}
+
+.arrow {
+    background-color: #c2d6d6;
+    color: #404040;
+    border-radius: 0.1rem;
+}
+
+.arrow:hover {
+    background-color: #a3c2c2;
+}
+
+#loginButtonContMob {
+    display: none;
+}
+
+/* styling login field */
+
+#contentLogin {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contentBoxLogin {
+    height: 40%;
+    width: 50%;
+    flex-direction: column;
+    background-color:  #0066ff;
+    border-radius: 1rem;
+}
+
+.inputfieldCont {
+    text-align: center;
+    height: 3rem;
+}
+
+.inputfieldCont input {
+    width: 90%;   
+    font-size: medium;
+    background-color: #f2f2f3;
+}
+
+#loginButton {
+    background-color: #c2d6d6;
+}
+
+/* styling table komende wedstrijden */
+
+table {
+    font-size: small;
+    text-align: left;
+    background-color: #c2d6d6;
+}
+
+table th,td {
+    border-bottom: 0.1rem solid #f2f2f3;
+}
+
+/* styling foto folders */
+
+#contentBoxFotos {
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: scroll;
+    width: 100%;
+} 
+
+.fotofolder {
+    width: 30%;
+    height: 35%;
+    margin: 1rem;
+}
+
+.fotoCont {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.fotofolder img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fotofolder figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+/*footer*/
+
+footer {
+    background-color: #c2d6d6;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 0.3rem solid #f2f2f3;
+}
+
+footer p {
+   margin: 0.5em;
+}
+
+/* ipad*/
+
+@media only screen and (min-width: 481px) and (max-width: 1025px) {
+    .outerDiv {
+        width: 100%;
+    }
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 480px) {
+    html {font-size:10px}
+    .outerDiv {
+        width: 100%;
+    }
+    header {
+        height: 15%;
+    }
+    
+    header img {
+        width: 20%;
+        height: auto;
+        align-self: center;
+    }
+    main{
+        display: block;
+        height: 80%;
+    }
+    nav {
+        height: 15%;
+        width: 100%;
+        display: block;
+    }
+
+    .buttonNavs {
+        align-items: center;   
+    }
+
+    .nothidden {
+        height: 100%;
+        display: flex;
+    }
+
+    .hidden {
+        height: 50%;
+    }
+
+    .ingelogdMobile {
+        display: flex;
+        height: 50%;
+    }
+
+    .buttonNav {
+        border-bottom: none;
+    }
+
+    .contentBox {
+        width: 90%;
+        height: 70%;
+        padding: 1rem;
+    }
+
+    #loginButtonContMob {
+        display: flex;
+        align-items: flex-start;
+        height: 30%;
+    }
+
+    #loginButtonContPC {
+        display: none;
+    }
+
+    section {
+        height: 85%;
+        width: 100%;
+        overflow: scroll;
+    }
+    
+    .inputfieldCont input {
+        width: 80%;
+        font-size: small;
+        background-color: #f2f2f3;
+    }
+
+    table {
+        font-size: smaller;
+    }
+
+    .fotofolder {
+        width: 80%;
+        height: 50%;
+    }
+}
